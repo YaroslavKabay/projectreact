@@ -1,36 +1,16 @@
-import {Link,Routes,Route} from "react-router-dom" ;
+import {MoviesList, Header, ShowCounts,Count1Tools, } from "./components";
 
-import {TodosPage, AlbumsPage, PostsPage,CommentsPage} from "./pages";
-
-function App() {
-  return (
-      <div >
-        <h2> Menu </h2>
-        <ul>
-          <li><Link to={'/todos'}> todos </Link> </li>
-          <li><Link to={'/albums'}> albums </Link> </li>
-          <li><Link to={'/comments'}> comments </Link> </li>
-        </ul>
-
+const App = () => {
+    return (
         <div>
-          <h3>Content</h3>
-          <Routes>
-
-            <Route path={'/todos'} element={<TodosPage/>}/>
-            <Route path={'/albums'} element={<AlbumsPage/>}/>
-            <Route path={'/comments'} element={<CommentsPage/>}>
-
-              <Route path={':id'} element={<PostsPage/>}/>
-
-            </Route>
-
-
-          </Routes>
-
+            {/*<ShowCounts/>*/}
+            {/*<hr/>*/}
+            {/*<Count1Tools/>*/}
+            <Header/>
+            <hr/>
+            <MoviesList/>
         </div>
+    );
+};
 
-
-      </div>);
-}
-
-export default App;
+export {App};
