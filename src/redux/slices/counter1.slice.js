@@ -2,7 +2,6 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     movies: [],
-    genres: [],
     isLoading: false,
     serverError:null
 };
@@ -66,7 +65,6 @@ const {reducer: movieReducer, actions: {}} = movieSlice;
 
 const movieActions = {
     getMovies
-    // getGenres
 }
 
 export {
