@@ -1,11 +1,11 @@
 import {useDispatch} from "react-redux";
-import {count1Actions} from "../redux";
+import {genresActions} from "../redux";
 
 const Count1Tools = () => {
     const dispatch = useDispatch();
     return (
         <div>
-            <button onClick={()=>dispatch(count1Actions.getUsers())}>users</button>
+            <button onClick={()=>dispatch(genresActions.getGenres())}>Genres</button>
         </div>
     );
 };

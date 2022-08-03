@@ -4,7 +4,6 @@ const App = () => {
     return (
         <div>
             <ShowCounts/>
-
             <Count1Tools/>
             {/*<Header/>*/}
             <hr/>

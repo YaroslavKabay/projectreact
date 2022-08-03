@@ -13,15 +13,17 @@ export const MoviesList = () => {
 
     console.log(movies);
 
-    return (<div>
+    return (
+        <div>
         Movies:
-        {movies.map(movie => <div key={movie.id}>
-            <h3>{movie.title}</h3>
-            {movie.vote_average}
-            <hr/>
-            {isLoading&& <h1>Loading</h1>}
-            {serverError&& <h1>{serverError}</h1>}
-
-        </div>)}
+        {movies.map(movie =>
+                <div key={movie.id}>
+                    <h3>{movie.title}</h3>
+                    {movie.vote_average}
+                    <hr/>
+                    {isLoading&& <h1>Loading</h1>}
+                    {serverError&& <h1>{serverError}</h1>}
+                </div>
+        )}
     </div>)
 }

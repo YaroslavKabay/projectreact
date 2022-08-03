@@ -1,2 +1,2 @@
-export * from './counter1.slice';
+export * from './getMovies.slice';
 export * from './getGenres.slice';
