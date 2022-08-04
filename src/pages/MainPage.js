@@ -8,16 +8,22 @@ function MainPage() {
     return (
         <div >
             <h2> Menu </h2>
-                <Link to={'/'}> basic</Link>
+                <Link to={'/'}> Back to movies</Link>
+                <Link to={':id'}></Link>
+
                 {/*<Link to={'/movies'}> Movie List</Link>*/}
 
             <div>
                 <h3>Content</h3>
                 <Routes>
-                <Route path={'/'} element={<MoviesPage/>}>
-                        <Route path={':id'} element={<MoviePage/>}/>
-                </Route>
+                {/*<Route path={'/'} element={<MoviesPage/>}>*/}
+                {/*        <Route path={':id'} element={<MoviePage/>}/>*/}
+                {/*</Route>*/}
+                    <Route path={'/'} element={<MoviesPage/>}/>
+
+                    <Route path={':id'} element={<MoviePage/>}/>
                     </Routes>
+
 
             </div>
 

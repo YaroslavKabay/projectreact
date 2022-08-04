@@ -21,8 +21,8 @@ export const MoviesList = () => {
                     <h3>{movie.title}</h3>
                     <img className={"img"} src={"https://image.tmdb.org/t/p/w500/"+ movie.poster_path}/>
                     {movie.vote_average}
-                    {/*{isLoading&& <h1>Loading</h1>}*/}
-                    {/*{serverError&& <h1>{serverError}</h1>}*/}
+                    {isLoading&& <h1>Loading</h1>}
+                    {serverError&& <h1>{serverError}</h1>}
                     <span> <Link to={movie.id.toString()} state={{...movie}}> Check posts </Link></span>
                 </div>
         )}
