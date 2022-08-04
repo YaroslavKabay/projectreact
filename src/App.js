@@ -1,13 +1,14 @@
-import {MoviesList, Header, ShowCounts,Count1Tools, } from "./components";
+import './App.css';
+
+import {Header, MoviesPage} from "./components";
 
 const App = () => {
     return (
         <div>
-            <ShowCounts/>
-            <Count1Tools/>
-            {/*<Header/>*/}
+
+            <Header/>
             <hr/>
-            <MoviesList/>
+            <MoviesPage/>
         </div>
     );
 };

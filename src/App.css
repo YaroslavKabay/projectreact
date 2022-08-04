@@ -1,0 +1,49 @@
+.moviescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.img {
+    height: 200px;
+
+}
+
+.movie {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: center;
+}
+.genrescontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres {
+    margin: 10px ;
+}
+.genresTools {
+    display: flex;
+}
+.genresTool{
+    margin: 10px;
+    height: 30px;
+
+}
+.imgUser {
+    height: 40px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 560px;
+}
+

@@ -14,13 +14,12 @@ export const MoviesList = () => {
     console.log(movies);
 
     return (
-        <div>
-        Movies:
+        <div className={"moviescontainer"}>
         {movies.map(movie =>
-                <div key={movie.id}>
+                <div className={"movie"} key={movie.id}>
                     <h3>{movie.title}</h3>
+                    <img className={"img"} src={"https://image.tmdb.org/t/p/w500/"+ movie.poster_path}/>
                     {movie.vote_average}
-                    <hr/>
                     {isLoading&& <h1>Loading</h1>}
                     {serverError&& <h1>{serverError}</h1>}
                 </div>

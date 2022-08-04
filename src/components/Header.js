@@ -1,10 +1,12 @@
 import React from 'react';
+import {GenresList} from "./GenresList";
+import {GenresTools} from "./GenresTools";
 
 const Header = () => {
     return (
         <div>
-            <h2>Header </h2>
-            <hr/>
+            <GenresTools/>
+            <GenresList/>
         </div>
     );
 };
