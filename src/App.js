@@ -1,6 +1,7 @@
 import './App.css';
 
-import {Header, MoviesPage} from "./components";
+import {Header, MoviesContainer} from "./components";
+import {MainPage} from "./pages";
 
 const App = () => {
     return (
@@ -8,7 +9,8 @@ const App = () => {
 
             <Header/>
             <hr/>
-            <MoviesPage/>
+            {/*<MoviesContainer/>*/}
+            <MainPage/>
         </div>
     );
 };
