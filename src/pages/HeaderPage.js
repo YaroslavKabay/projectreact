@@ -1,8 +1,8 @@
 import React from 'react';
-import {GenresList} from "./GenresList";
-import {GenresTools} from "./GenresTools";
 
-const Header = () => {
+import {GenresList, GenresTools} from "../components";
+
+const HeaderPage = () => {
     return (
         <div>
             <GenresTools/>
@@ -11,4 +11,4 @@ const Header = () => {
     );
 };
 
-export {Header};
+export {HeaderPage};

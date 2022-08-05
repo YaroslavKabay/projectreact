@@ -1,29 +1,21 @@
 import {Link,Routes,Route} from "react-router-dom" ;
-
-import {MoviePage,MoviesPage} from "../pages";
-import {MoviesList} from "../components";
 import React from "react";
+
+import {MoviePage,MoviesPage,HeaderPage} from "../pages";
+
 
 function MainPage() {
     return (
         <div >
-            <h2> Menu </h2>
-                <Link to={'/'}> Back to movies</Link>
-                <Link to={':id'}></Link>
-
-                {/*<Link to={'/movies'}> Movie List</Link>*/}
-
+            <div  className="backToMoviesWrapper">
+                <Link to={'/'}> <button className={"button"} > Back to movies </button></Link>
+            </div>
             <div>
-                <h3>Content</h3>
+
                 <Routes>
-                {/*<Route path={'/'} element={<MoviesPage/>}>*/}
-                {/*        <Route path={':id'} element={<MoviePage/>}/>*/}
-                {/*</Route>*/}
                     <Route path={'/'} element={<MoviesPage/>}/>
-
                     <Route path={':id'} element={<MoviePage/>}/>
-                    </Routes>
-
+                </Routes>
 
             </div>
 

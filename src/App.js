@@ -1,15 +1,11 @@
 import './App.css';
 
-import {Header, MoviesContainer} from "./components";
-import {MainPage} from "./pages";
+import {MainPage, HeaderPage} from "./pages";
 
 const App = () => {
     return (
         <div>
-
-            <Header/>
-            <hr/>
-            {/*<MoviesContainer/>*/}
+            <HeaderPage/>
             <MainPage/>
         </div>
     );

@@ -15,8 +15,7 @@ const GenresTools = () => {
             <button className={"genresTool"}>Best Films Ever</button>
             <button className={"genresTool"}>Top 100</button>
             <div className={"user"}>
-                <img className={"imgUser"} src={"https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png"}/>
-                {/*<div></div>*/}
+                <img className={"imgUser"} src={"https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"}/>
             </div>
 
 

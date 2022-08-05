@@ -3,38 +3,77 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
+    background: silver;
 
 }
-
 .img {
     height: 200px;
 
 }
 
 .movie {
+    height: 300px;
     width: 300px;
     display: flex;
     flex-direction: column;
-
-
     align-items: center;
+    padding: 24px 16px;
+
+    background-color: grey;
+    border-radius: 15px;
+    border: 1px solid darkgrey;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.movie:hover {
+    background: #d8e4ef;
+    transition: .3s;
+    transform: scaleX(1.001);
+}
+
+.movieTitle{
+
+    margin-top: -10px;
+
 }
 .genrescontainer {
     display: flex;
     flex-wrap: wrap;
+    background-color: grey;
+
 }
 
 .genres {
-    margin: 10px ;
+    margin: 10px;
 }
 .genresTools {
     display: flex;
+    justify-content: center;
+    background-color: grey;
+
 }
 .genresTool{
     margin: 10px;
-    height: 30px;
+    height: 40px;
 
+    cursor: pointer;
+    background: silver;
+    border-radius: 15px;
+    border-color: goldenrod;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 15px;
+
+
+}
+
+.genresTool:hover {
+    background: goldenrod;
+    transition: 1.5s;
+    transform: rotateY(10grad);
+    cursor: pointer;
 }
 .imgUser {
     height: 40px;
@@ -44,6 +83,45 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 560px;
+    margin-left: 500px;
+}
+
+.backToMoviesWrapper {
+    background-color: grey;
+
+}
+
+.moviePage {
+    background-color: silver;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.movieImg {
+    height: 500px;
+    width: 1000px;
+
+}
+
+
+.button {
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    background: silver;
+    border-radius: 15px;
+    border-color: goldenrod;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 15px;
+}
+.button:hover {
+    background: goldenrod;
+    transition: 1.5s;
+    transform: rotateY(10grad);
+    cursor: pointer;
 }
 
